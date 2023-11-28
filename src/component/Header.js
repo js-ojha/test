@@ -5,9 +5,10 @@ import '../App.css';
 function Header() {
   return (
     <div className="App"> 
-             <Link to="/" >Go to Home  </Link> 
-             <Link to="/about" > Go to About </Link> 
-             <Link to="/contact" > Go to Contacts </Link> 
+             <Link className='mr' to="/" >Go to Home  </Link> 
+             <Link className='mr' to="/about" > Go to About </Link> 
+             <Link className='mr' to="/contact" > Go to Contacts </Link> 
+             <Link className='mr' to="/sitemap" > Go to Sitemap </Link> 
     </div> 
   )
 }
