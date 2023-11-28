@@ -4,7 +4,7 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const hostname = 'https://js-ojha.github.io/test/'; // Replace with your domain
 
 // Define your routes
-export const routes = [
+const routes = [
   { url: '/', changefreq: 'daily', priority: 0.7 },
   { url: '/about', changefreq: 'weekly', priority: 0.5 },
   { url: '/contact', changefreq: 'weekly', priority: 0.5 },
