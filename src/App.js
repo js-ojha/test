@@ -96,16 +96,16 @@ function App() {
   };  
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/test'>
     <Header />
     <Routes>
-       <Route path="test/*" element={<Home />} /> 
-        <Route path="test/about" exact element={<About />} /> 
-        <Route path="test/contact" exact element={<Contact />} /> 
+       <Route path="/*" element={<Home />} /> 
+        <Route path="/about" exact element={<About />} /> 
+        <Route path="/contact" exact element={<Contact />} /> 
 
         {/* Sitemap route */}
         <Route
-          path="test/sitemap"
+          path="/sitemap"
           element={<SitemapComponent sitemapContent={sitemapContent} />}
         />
     </Routes>
